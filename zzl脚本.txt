@@ -53,7 +53,6 @@ about:AddParagraph("适配的游戏有evade 力量传奇 极速传奇 忍者传�
 about:AddParagraph("彩虹朋友 兵工厂 伐木大亨 one fruit 俄亥俄州 监狱人生 手臂摔跤")
 about:AddParagraph("作者qq：3555788945")
 
-Tab:AddButton({
 local Tab = Window:MakeTab({
 	Name = "通用",
 	Icon = "rbxassetid://4483345998",
