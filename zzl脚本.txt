@@ -51,6 +51,18 @@ about:AddParagraph("fXz制作")
 about:AddParagraph("永远免费")
 about:AddParagraph("适配的游戏有evade 力量传奇 极速传奇 忍者传奇 doors the rake 背上只因剑 bf")
 about:AddParagraph("彩虹朋友 兵工厂 伐木大亨 one fruit 俄亥俄州 监狱人生 手臂摔跤")
+Tab:AddButton({
+
+	Name = "复制作者QQ",
+
+	Callback = function()
+
+     setclipboard("3555788945")
+
+  	end
+
+})
+Tab:AddButton({
 local Tab = Window:MakeTab({
 	Name = "通用",
 	Icon = "rbxassetid://4483345998",
@@ -240,26 +252,10 @@ Tab:AddButton({
 	end
 })
 
-local player = Window:MakeTab({
+local Tab = Window:MakeTab({
 	Name = "玩家",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})
-
-Tab:AddTextbox({
-	Name = "重力设置",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Workspace.Gravity = Value
-	end
-})
-
-Tab:AddButton({
-	Name = "隐身(E)",
-	Callback = function()
-	 loadstring(game:HttpGet('https://pastebin.com/raw/nwGEvkez'))()
-  	end    
 })
 
 player:AddTextbox({
@@ -278,13 +274,6 @@ player:AddTextbox({
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	end
-})
-
-player:AddButton({
-	Name = "飞行",
-	Callback = function()
-      	loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
-  	end
 })
 
 Tab:AddButton({  
