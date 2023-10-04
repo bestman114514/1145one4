@@ -248,24 +248,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-player:AddTextbox({
-	Name = "移动速度",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end
-})
-
-player:AddTextbox({
-	Name = "跳跃高度",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end
-})
-
 Tab:AddButton({  
     Name = "碰到就甩飞",
 	Callback = function()
