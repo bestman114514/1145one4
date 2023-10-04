@@ -72,6 +72,7 @@ Tab:AddButton({
      setclipboard("850554330")
   	end
 })
+
 local Tab = Window:MakeTab({
 	Name = "通用",
 	Icon = "rbxassetid://4483345998",
