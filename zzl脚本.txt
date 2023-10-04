@@ -39,18 +39,18 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/nJJPrp2w"))()
-local Window = OrionLib:MakeWindow({Name = "猫脚本", HidePremium = false, IntroText = "猫脚本"})
+local Window = OrionLib:MakeWindow({Name = "zzl脚本", HidePremium = false, IntroText = "zzl脚本"})
 
 local about = Window:MakeTab({
-    Name = "空白制作",
+    Name = "fXz制作",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 about:AddParagraph("fXz制作")
-about:AddParagraph("这是永远免费的一个整合脚本")
-about:AddParagraph("放心使用")
-
+about:AddParagraph("永远免费")
+about:AddParagraph("适配的游戏有evade 力量传奇 极速传奇 忍者传奇 doors the rake 背上只因剑 bf 俄亥俄州 监狱人生 手臂摔跤")
+about:AddParagraph("彩虹朋友 兵工厂 伐木大亨 one fruit")
 local Tab = Window:MakeTab({
 	Name = "通用",
 	Icon = "rbxassetid://4483345998",
@@ -167,6 +167,12 @@ Tab:AddButton({
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
   	end
+})
+Tab:AddButton({
+	Name = "反挂机2",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
+  	end    
 })
 
 Tab:AddButton({  
@@ -327,6 +333,22 @@ player:AddButton({
   	end
 })
 
+Tab:AddButton({  
+    Name = "碰到就甩飞",
+	Callback = function()
+	-- Subscribe to Coldster
+-- https://discord.gg/4EbnAbXDPY
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+	end
+})
+
+Tab:AddButton({
+      Name = "点击传送工具",
+      Callback = function()
+      mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE]点击传送" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
+      end
+})
+
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://4483345998",
@@ -347,7 +369,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({  
-    Name = "1",
+    Name = "力量传奇",
 	Callback = function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends'),true))()
 	end
@@ -580,4 +602,54 @@ Tab:AddButton({
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/KrzysztofHub/script/main/loader.lua"))()
 	end
+})
+
+local Tab = Window:MakeTab({
+	Name = "彩虹朋友",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "彩虹朋友",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
+  end
+})
+local Tab = Window:MakeTab({
+	Name = "兵工厂",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "兵工厂",
+  Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+  end
+})
+local Tab = Window:MakeTab({
+	Name = "one fruit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "one fruit",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/13B8B/NEXUS/main/loadstring'))()
+  end
+})
+
+local Tab = Window:MakeTab({
+	Name = "伐木大亨",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "伐木大亨",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/FBXG1hhk",true))()
+  end
 })
