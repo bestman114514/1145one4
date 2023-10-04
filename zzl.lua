@@ -47,13 +47,6 @@ local about = Window:MakeTab({
     PremiumOnly = false
 })
 
-Tab:AddButton({
-	Name = "复制作者QQ",
-	Callback = function()
-     setclipboard("3555788945")
-  	end
-})
-
 about:AddParagraph("fXz制作")
 about:AddParagraph("永远免费")
 about:AddParagraph("适配的游戏有evade 力量传奇 极速传奇 忍者传奇 doors the rake 背上只因剑 bf")
